@@ -18,7 +18,15 @@ projects.
   gh repo create NEW_REPOSITORY_NAME --template=dmarcoux/python_templates --clone --private/--public
   ```
 
-2. Adapt this README to the project. This complete section can be deleted...
+2. Keep either `flake-FHS.nix` or `flake-STANDARD.nix` depending on what your
+   project needs. Rename the chosen file to `flake.nix`. For most projects,
+   `flake-STANDARD.nix` will be the right pick since it's simpler and all
+   dependencies are packaged by Nix. Only in rare cases when dependencies rely on
+   [FHS](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard), then use
+   `flake-FHS.nix`. As an example of this is [Playwright](https://playwright.dev/)
+   since it installs browsers in the typical FHS paths.
+
+3. Adapt this README to the project. This complete section can be deleted...
 
 ## Python Development Environment with Nix Flakes
 
