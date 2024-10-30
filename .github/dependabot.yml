@@ -1,0 +1,15 @@
+# https://help.github.com/en/github/administering-a-repository/configuration-options-for-dependency-updates
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    # CHANGEME: Remove the following line to activate Dependabot (this is only to prevent Dependabot from creating PRs in this template repository)
+    open-pull-requests-limit: 0
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    # CHANGEME: Remove the following line to activate Dependabot (this is only to prevent Dependabot from creating PRs in this template repository)
+    open-pull-requests-limit: 0
