@@ -40,3 +40,7 @@ lint:
 # Run tests
 tests:
 	python manage.py test
+
+# Put installed Python packages in requirements.txt
+freeze:
+	pip freeze > requirements.txt
