@@ -53,6 +53,11 @@
 
         # Ensure .python-version contains the Python version installed in this development shell
         echo "$(python --version | cut --delimiter=" " --fields=2)" > .python-version
+
+        # Create and activate the Python virtual environment
+        export VIRTUAL_ENV="$PWD/venv"
+        python -m venv "$VIRTUAL_ENV"
+        export PATH="$VIRTUAL_ENV/bin:$PATH"
       '';
     };
   };
