@@ -64,3 +64,15 @@ a purely functional and cross-platform package manager.
 
 Refer to the [Makefile](./Makefile) to see various commands, like starting the
 development environment or formatting the code.
+
+## Python Development Environment with devenv
+
+Reproducible development environment for Python projects which relies on
+[devenv](https://devenv.sh/). Underneath, it uses
+[Nix](https://github.com/NixOS/nix), a purely functional and cross-platform
+package manager.
+
+WIP: For now, refer to
+[sports_tracker](https://github.com/dmarcoux/sports_tracker) and its
+[devenv.nix](https://github.com/dmarcoux/sports_tracker/blob/main/devenv.nix)
+file.
